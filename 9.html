@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var maças = prompt("Quantas maçãs você deseja?");
+      var preçoMenor = 0.25;
+      var preçoMaior = 0.3;
+
+      if (maças < 12) {
+        document.write(
+          maças + " maçãs vão custar R$" + (maças * preçoMaior).toFixed(2)
+        );
+      } else {
+        document.write(
+          maças + " maçãs vão custar R$" + (maças * preçoMenor).toFixed(2)
+        );
+      }
+    </script>
+  </body>
+</html>

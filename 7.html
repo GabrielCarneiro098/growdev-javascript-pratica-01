@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var eleitores = parseInt(prompt("Digite o número de eleitores."));
+      var votosBrancos = parseInt(
+        prompt("Digite a quantidade de votos brancos.")
+      );
+      var votosNulos = parseInt(prompt("Digite a quantidade de votos nulos."));
+      var votosValidos = parseInt(prompt("Quantidade de votos válidos."));
+
+      var percentBranco = (votosBrancos / eleitores) * 100;
+      var percentNulo = (votosNulos / eleitores) * 100;
+      var percentValido = (votosValidos / eleitores) * 100;
+
+      document.write(
+        "Porcentagem de votos brancos: " +
+          percentBranco.toFixed(2) +
+          "%" +
+          "<br>"
+      );
+      document.write(
+        "Porcentagem de votos nulos: " + percentNulo.toFixed(2) + "%" + "<br>"
+      );
+      document.write(
+        "Porcentagem de votos válidos: " +
+          percentValido.toFixed(2) +
+          "%" +
+          "<br>"
+      );
+    </script>
+  </body>
+</html>
